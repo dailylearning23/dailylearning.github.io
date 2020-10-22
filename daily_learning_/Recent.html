@@ -1,0 +1,812 @@
+<html lang="en">
+
+<head>
+    <style class="vjs-styles-defaults">
+        .video-js {
+            width: 300px;
+            height: 150px;
+        }
+        
+        .vjs-fluid {
+            padding-top: 56.25%
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Bootstrap 4 Magazine/Blog Theme">
+    <meta name="author" content="Bootlab">
+
+    <title>Recent news</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="styleheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="styleheet" href="jqueryui/jquery-ui.theme.css">
+    <link rel="stylesheet" href="newstyle.css">
+
+    <style type="text/css">
+        svg:not(:root).svg-inline--fa {
+            overflow: visible
+        }
+        
+        .svg-inline--fa {
+            display: inline-block;
+            font-size: inherit;
+            height: 1em;
+            overflow: visible;
+            vertical-align: -.125em
+        }
+        
+        .svg-inline--fa.fa-lg {
+            vertical-align: -.225em
+        }
+        
+        .svg-inline--fa.fa-w-1 {
+            width: .0625em
+        }
+        
+        .svg-inline--fa.fa-w-2 {
+            width: .125em
+        }
+        
+        .svg-inline--fa.fa-w-3 {
+            width: .1875em
+        }
+        
+        .svg-inline--fa.fa-w-4 {
+            width: .25em
+        }
+        
+        .svg-inline--fa.fa-w-5 {
+            width: .3125em
+        }
+        
+        .svg-inline--fa.fa-w-6 {
+            width: .375em
+        }
+        
+        .svg-inline--fa.fa-w-7 {
+            width: .4375em
+        }
+        
+        .svg-inline--fa.fa-w-8 {
+            width: .5em
+        }
+        
+        .svg-inline--fa.fa-w-9 {
+            width: .5625em
+        }
+        
+        .svg-inline--fa.fa-w-10 {
+            width: .625em
+        }
+        
+        .svg-inline--fa.fa-w-11 {
+            width: .6875em
+        }
+        
+        .svg-inline--fa.fa-w-12 {
+            width: .75em
+        }
+        
+        .svg-inline--fa.fa-w-13 {
+            width: .8125em
+        }
+        
+        .svg-inline--fa.fa-w-14 {
+            width: .875em
+        }
+        
+        .svg-inline--fa.fa-w-15 {
+            width: .9375em
+        }
+        
+        .svg-inline--fa.fa-w-16 {
+            width: 1em
+        }
+        
+        .svg-inline--fa.fa-w-17 {
+            width: 1.0625em
+        }
+        
+        .svg-inline--fa.fa-w-18 {
+            width: 1.125em
+        }
+        
+        .svg-inline--fa.fa-w-19 {
+            width: 1.1875em
+        }
+        
+        .svg-inline--fa.fa-w-20 {
+            width: 1.25em
+        }
+        
+        .svg-inline--fa.fa-pull-left {
+            margin-right: .3em;
+            width: auto
+        }
+        
+        .svg-inline--fa.fa-pull-right {
+            margin-left: .3em;
+            width: auto
+        }
+        
+        .svg-inline--fa.fa-border {
+            height: 1.5em
+        }
+        
+        .svg-inline--fa.fa-li {
+            width: 2em
+        }
+        
+        .svg-inline--fa.fa-fw {
+            width: 1.25em
+        }
+        
+        .fa-layers svg.svg-inline--fa {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+        
+        .fa-layers {
+            display: inline-block;
+            height: 1em;
+            position: relative;
+            text-align: center;
+            vertical-align: -.125em;
+            width: 1em
+        }
+        
+        .fa-layers svg.svg-inline--fa {
+            -webkit-transform-origin: center center;
+            transform-origin: center center
+        }
+        
+        .fa-layers-counter,
+        .fa-layers-text {
+            display: inline-block;
+            position: absolute;
+            text-align: center
+        }
+        
+        .fa-layers-text {
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transform-origin: center center;
+            transform-origin: center center
+        }
+        
+        .fa-layers-counter {
+            background-color: #ff253a;
+            border-radius: 1em;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #fff;
+            height: 1.5em;
+            line-height: 1;
+            max-width: 5em;
+            min-width: 1.5em;
+            overflow: hidden;
+            padding: .25em;
+            right: 0;
+            text-overflow: ellipsis;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top right;
+            transform-origin: top right
+        }
+        
+        .fa-layers-bottom-right {
+            bottom: 0;
+            right: 0;
+            top: auto;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right
+        }
+        
+        .fa-layers-bottom-left {
+            bottom: 0;
+            left: 0;
+            right: auto;
+            top: auto;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: bottom left;
+            transform-origin: bottom left
+        }
+        
+        .fa-layers-top-right {
+            right: 0;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top right;
+            transform-origin: top right
+        }
+        
+        .fa-layers-top-left {
+            left: 0;
+            right: auto;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top left;
+            transform-origin: top left
+        }
+        
+        .fa-lg {
+            font-size: 1.3333333333em;
+            line-height: .75em;
+            vertical-align: -.0667em
+        }
+        
+        .fa-xs {
+            font-size: .75em
+        }
+        
+        .fa-sm {
+            font-size: .875em
+        }
+        
+        .fa-1x {
+            font-size: 1em
+        }
+        
+        .fa-2x {
+            font-size: 2em
+        }
+        
+        .fa-3x {
+            font-size: 3em
+        }
+        
+        .fa-4x {
+            font-size: 4em
+        }
+        
+        .fa-5x {
+            font-size: 5em
+        }
+        
+        .fa-6x {
+            font-size: 6em
+        }
+        
+        .fa-7x {
+            font-size: 7em
+        }
+        
+        .fa-8x {
+            font-size: 8em
+        }
+        
+        .fa-9x {
+            font-size: 9em
+        }
+        
+        .fa-10x {
+            font-size: 10em
+        }
+        
+        .fa-fw {
+            text-align: center;
+            width: 1.25em
+        }
+        
+        .fa-ul {
+            list-style-type: none;
+            margin-left: 2.5em;
+            padding-left: 0
+        }
+        
+        .fa-ul>li {
+            position: relative
+        }
+        
+        .fa-li {
+            left: -2em;
+            position: absolute;
+            text-align: center;
+            width: 2em;
+            line-height: inherit
+        }
+        
+        .fa-border {
+            border: solid .08em #eee;
+            border-radius: .1em;
+            padding: .2em .25em .15em
+        }
+        
+        .fa-pull-left {
+            float: left
+        }
+        
+        .fa-pull-right {
+            float: right
+        }
+        
+        .fa.fa-pull-left,
+        .fab.fa-pull-left,
+        .fal.fa-pull-left,
+        .far.fa-pull-left,
+        .fas.fa-pull-left {
+            margin-right: .3em
+        }
+        
+        .fa.fa-pull-right,
+        .fab.fa-pull-right,
+        .fal.fa-pull-right,
+        .far.fa-pull-right,
+        .fas.fa-pull-right {
+            margin-left: .3em
+        }
+        
+        .fa-spin {
+            -webkit-animation: fa-spin 2s infinite linear;
+            animation: fa-spin 2s infinite linear
+        }
+        
+        .fa-pulse {
+            -webkit-animation: fa-spin 1s infinite steps(8);
+            animation: fa-spin 1s infinite steps(8)
+        }
+        
+        @-webkit-keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+        
+        @keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+        
+        .fa-rotate-90 {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+        
+        .fa-rotate-180 {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg)
+        }
+        
+        .fa-rotate-270 {
+            -webkit-transform: rotate(270deg);
+            transform: rotate(270deg)
+        }
+        
+        .fa-flip-horizontal {
+            -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1)
+        }
+        
+        .fa-flip-vertical {
+            -webkit-transform: scale(1, -1);
+            transform: scale(1, -1)
+        }
+        
+        .fa-flip-both,
+        .fa-flip-horizontal.fa-flip-vertical {
+            -webkit-transform: scale(-1, -1);
+            transform: scale(-1, -1)
+        }
+        
+         :root .fa-flip-both,
+         :root .fa-flip-horizontal,
+         :root .fa-flip-vertical,
+         :root .fa-rotate-180,
+         :root .fa-rotate-270,
+         :root .fa-rotate-90 {
+            -webkit-filter: none;
+            filter: none
+        }
+        
+        .fa-stack {
+            display: inline-block;
+            height: 2em;
+            position: relative;
+            width: 2.5em
+        }
+        
+        .fa-stack-1x,
+        .fa-stack-2x {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+        
+        .svg-inline--fa.fa-stack-1x {
+            height: 1em;
+            width: 1.25em
+        }
+        
+        .svg-inline--fa.fa-stack-2x {
+            height: 2em;
+            width: 2.5em
+        }
+        
+        .fa-inverse {
+            color: #fff
+        }
+        
+        .sr-only {
+            border: 0;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px
+        }
+        
+        .sr-only-focusable:active,
+        .sr-only-focusable:focus {
+            clip: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto
+        }
+        
+        .svg-inline--fa .fa-primary {
+            fill: var(--fa-primary-color, currentColor);
+            opacity: 1;
+            opacity: var(--fa-primary-opacity, 1)
+        }
+        
+        .svg-inline--fa .fa-secondary {
+            fill: var(--fa-secondary-color, currentColor);
+            opacity: .4;
+            opacity: var(--fa-secondary-opacity, .4)
+        }
+        
+        .svg-inline--fa.fa-swap-opacity .fa-primary {
+            opacity: .4;
+            opacity: var(--fa-secondary-opacity, .4)
+        }
+        
+        .svg-inline--fa.fa-swap-opacity .fa-secondary {
+            opacity: 1;
+            opacity: var(--fa-primary-opacity, 1)
+        }
+        
+        .svg-inline--fa mask .fa-primary,
+        .svg-inline--fa mask .fa-secondary {
+            fill: #000
+        }
+        
+        .fad.fa-inverse {
+            color: #fff
+        }
+    </style>
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.980.0">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Raigarh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Recent.html">Recent</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Visit
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main pt-4 main">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-9">
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <article class="card mb-4">
+                                <header class="card-header">
+
+                                    <a href="https://indianexpress.com/article/india/narendra-modi-durga-puja-bengal-coronavirus-6834230/">
+                                        <h4 class="card-title">‘Women in the country must be given the respect people give to Goddess Durga’: PM Modi</h4>
+                                    </a>
+                                </header>
+                                <a href="https://indianexpress.com/article/india/narendra-modi-durga-puja-bengal-coronavirus-6834230/">
+                                    <img src="https://images.indianexpress.com/2020/10/Modi-16.jpg" class="card-img" src="img/articles/22.jpg" alt="">
+                                </a>
+                                <div class="card-body">
+                                    <p class="card-text">Prime Minister Narendra Modi on Thursday virtually addressed the people of West Bengal on the occasion of Durga Puja and asserted that the Centre’s vision of Atmanirbhar Bharat Abhiyan (self-reliant India) would be
+                                        strengthened from Bengal. </p>
+                                </div>
+                            </article>
+                            <!-- /.card -->
+
+                            <article class="card mb-4">
+                                <header class="card-header">
+
+                                    <a href="https://www.hindustantimes.com/india-news/assam-rifles-jawan-killed-after-team-ambushed-in-arunachal-pradesh/story-FUzM6WZ3zCzzMEFfsDtQHL.html">
+                                        <h4 class="card-title">Assam Rifles jawan killed after team ambushed in Arunachal Pradesh</h4>
+                                    </a>
+                                </header>
+                                <a href="https://www.hindustantimes.com/india-news/assam-rifles-jawan-killed-after-team-ambushed-in-arunachal-pradesh/story-FUzM6WZ3zCzzMEFfsDtQHL.html">
+                                    <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2020/10/21/Pictures/_19117b0e-1397-11eb-894e-a8561a6abce9.jpg" class="card-img" src="img/articles/18.jpg" alt="">
+                                </a>
+                                <div class="card-body">
+                                    <p class="card-text">An Assam Rifles personnel was killed and another sustained injuries after an ambush by suspected National Socialist Council of Nagaland-Isak Muivah (NSCN-IM) militants in Tirap district of Arunachal Pradesh on Wednesday
+                                        morning. </p>
+                                </div>
+                            </article>
+                            <!-- /.card -->
+
+                            <article class="card mb-4">
+                                <header class="card-header">
+
+                                    <a href="https://www.hindustantimes.com/world-news/us-election-2020-obama-campaigning-for-biden-is-good-news-says-donald-trump/story-nZg81luIrvPs9gPXvmsZtM.html">
+                                        <h4 class="card-title">US Election 2020: Obama campaigning for Biden is ‘good news,’ says Donald Trump</h4>
+                                    </a>
+                                </header>
+                                <a href="https://www.hindustantimes.com/world-news/us-election-2020-obama-campaigning-for-biden-is-good-news-says-donald-trump/story-nZg81luIrvPs9gPXvmsZtM.html">
+                                    <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2020/10/22/Pictures/carolina-gastonia-president-donald-trump-campaign-rally_0adc7616-142c-11eb-b504-c4c734a23405.jpg" class="card-img" src="img/articles/12.jpg" alt="">
+                                </a>
+                                <div class="card-body">
+                                    <p class="card-text">US President Donald Trump has downplayed the election campaign of his predecessor Barack Obama in support of his Democratic challenger Joe Biden, asserting that people sent him to the White House due to the Obama administration’s
+                                        failures. </p>
+                                </div>
+                            </article>
+                            <!-- /.card -->
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <article class="card mb-4">
+                                <header class="card-header">
+
+                                    <a href="https://www.aljazeera.com/news/2020/10/21/us-state-dept-approves-1-8bn-in-potential-arms-sales-to-taiwan">
+                                        <h4 class="card-title">US approves $1.8bn in potential arms sales to Taiwan</h4>
+                                    </a>
+                                </header>
+                                <a href="https://www.aljazeera.com/news/2020/10/21/us-state-dept-approves-1-8bn-in-potential-arms-sales-to-taiwan">
+                                    <img src="https://www.aljazeera.com/wp-content/uploads/2020/09/a7a9508b57144da8a81f96aace4e318f_18.jpeg?resize=770%2C513" class="card-img" src="img/articles/5.jpg" alt="">
+                                </a>
+                                <div class="card-body">
+                                    <p class="card-text">The US Department of State has approved the potential sale of three weapons systems to Taiwan, including sensors, missiles and artillery that could have a total value of $1.8bn, the Pentagon said on Wednesday, amid
+                                        rising tension over the self-ruled island that China claims as its own. </p>
+                                </div>
+                            </article>
+                            <!-- /.card -->
+
+                            <article class="card mb-4">
+                                <header class="card-header">
+
+                                    <a href="https://economictimes.indiatimes.com/wealth/personal-finance-news/sbi-announces-festive-season-interest-rate-concession-up-to-25-bps-on-home-loans-check-details-here/articleshow/78782694.cms">
+                                        <h4 class="card-title">SBI announces festive season interest rate concession up to 25 bps on home loans: Check details here Read more
+                                        </h4>
+                                    </a>
+                                </header>
+                                <a href="https://economictimes.indiatimes.com/wealth/personal-finance-news/sbi-announces-festive-season-interest-rate-concession-up-to-25-bps-on-home-loans-check-details-here/articleshow/78782694.cms">
+                                    <img src="https://img.etimg.com/thumb/msid-78789997,width-300,imgsize-37356,,resizemode-4,quality-100/.jpg" class="card-img" src="img/articles/13.jpg" alt="">
+                                </a>
+                                <div class="card-body">
+                                    <p class="card-text">As part of its festive offer, the State Bank of India (SBI) has announced a concession in home loan interest rates by up to 25 bps. According to the SBI press release issued on October 21, 20202, home loan customers
+                                        would get an interest concession of 25 bps for buying a home of above Rs 75 lakh based on their CIBIL score and if they apply through the bank's YONO platform.
+
+                                    </p>
+                                </div>
+                            </article>
+                            <!-- /.card -->
+
+                            <article class="card mb-4">
+                                <header class="card-header">
+
+                                    <a href="https://www.androidauthority.com/apple-qualcomm-5g-modem-roadmap-1170969/">
+                                        <h4 class="card-title">Apple revealed Qualcomm’s own 5G modem roadmap</h4>
+                                    </a>
+                                </header>
+                                <a href="https://www.androidauthority.com/apple-qualcomm-5g-modem-roadmap-1170969/">
+                                    <img src="https://cdn57.androidauthority.net/wp-content/uploads/2020/10/iPhone-12-Mini-1200x675.jpg" class="card-img" src="img/articles/1.jpg" alt="">
+                                </a>
+                                <div class="card-body">
+                                    <p class="card-text">Apple has just launched its first 5G iPhones in the iPhone 12 series, and it looks like they’re powered by Qualcomm’s X55 modem seen in Android flagships too. This isn’t unexpected, given that Apple signed a settlement
+                                        to use Qualcomm chips in the first place </p>
+                                </div>
+                            </article>
+                            <!-- /.card -->
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 ml-auto">
+
+                    <aside class="sidebar">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">About</h4>
+                                <p class="card-text">Tech News, Fun facts, Entertainment news everything you need is here collectively at one place. No add Pure Content And Education.Follow as on Instagram@<a href="https://www.instagram.com/daily_learning_/?hl=en">daily_learning_</a>                                    </p>
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                    </aside>
+
+                    <aside class="sidebar sidebar-sticky">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">Tags</h4>
+                                <a class="btn btn-light btn-sm mb-1" href="https://www.earthtrekkers.com/life-as-a-travel-blogger/">Journey</a>
+                                <a class="btn btn-light btn-sm mb-1" href="https://www.teamgo.co/blog/15-best-workplace-blogs-to-follow/">Work</a>
+                                <a class="btn btn-light btn-sm mb-1" href="https://mediakix.com/blog/top-lifestyle-bloggers-everyone-should-know/">Lifestype</a>
+                                <a class="btn btn-light btn-sm mb-1" href="https://mediakix.com/blog/top-lifestyle-bloggers-everyone-should-know/">Photography</a>
+                                <a class="btn btn-light btn-sm mb-1" href="https://www.lordofthedrinks.in/">Food &amp; Drinks</a>
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">Popular stories</h4>
+
+                                <blockquote class="twitter-tweet">
+                                    <p lang="en" dir="ltr">As soon as <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> vaccine will be available for production at a mass scale, every person in Bihar will get free vaccination. This
+                                        is the first promise mentioned in our poll manifesto: Union Minister Nirmala Sitharaman at the launch of BJP Manifesto for <a href="https://twitter.com/hashtag/BiharPolls?src=hash&amp;ref_src=twsrc%5Etfw">#BiharPolls</a>
+                                        <a href="https://t.co/x4VjVmkA3Q">pic.twitter.com/x4VjVmkA3Q</a></p>&mdash; ANI (@ANI) <a href="https://twitter.com/ANI/status/1319153697406906369?ref_src=twsrc%5Etfw">October 22, 2020</a></blockquote>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                <time class="timeago" datetime="2019-10-03 20:00" timeago-id="7"></time>
+
+                                <a href="https://www.hindustantimes.com/tv/bigg-boss-14-day-19-promo-pavitra-punia-eijaz-khan-reopen-old-wounds-as-their-fight-turns-ugly-watch/story-hz42IFIbri3S62r0MPe2jO.html" class="d-inline-block mt-3">
+                                    <h4 class="h6"></h4>
+                                    <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2020/10/22/Pictures/_4d22595c-142f-11eb-9690-b19a1ecf710b.JPG" class="card-img" src="img/articles/3.jpg" alt="">
+                                </a>
+
+                                <time class="timeago" datetime="2019-07-16 20:00" timeago-id="8">Bigg Boss 14 day 19 promo: Pavitra Punia, Eijaz Khan reopen old wounds as their fight turns ugly.</time> in Work
+
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                    </aside>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <div class="site-instagram">
+        <div class="action">
+            <a class="btn btn-light" href="https://www.instagram.com/daily_learning_/?hl=en">
+      Follow us @ Instagram
+    </a>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-sm-6">
+                <div class="row no-gutters">
+                    <div class="col-3">
+                        <a class="photo" href="#">
+                            <img class="img-fluid" src="img/instagram/1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a class="photo" href="#">
+                            <img class="img-fluid" src="img/instagram/2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a class="photo" href="#">
+                            <img class="img-fluid" src="img/instagram/3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a class="photo" href="#">
+                            <img class="img-fluid" src="img/instagram/4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row no-gutters">
+                    <div class="col-3">
+                        <a class="photo" href="#">
+                            <img class="img-fluid" src="img/instagram/5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a class="photo" href="#">
+                            <img class="img-fluid" src="img/instagram/6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a class="photo" href="#">
+                            <img class="img-fluid" src="img/instagram/7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a class="photo" href="#">
+                            <img class="img-fluid" src="img/instagram/8.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer bg-darkest">
+        <div class="container">
+
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Privacy policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Terms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Advertise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page-contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="copy">
+                © daily_learning_<br> All rights reserved
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="jquery/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+
+
+</body>
+
+</html>
